@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.css">
+  <script src="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+  <link rel="stylesheet" href="Plan.css">
+  <title>Plan your journey.</title>
+</head>
+
+<body>
+
+<div class="container-fluid">
+
+    <nav class="navbar navbar-inverse navbar-expand-lg fixed-top" style="background: #000000; /* Fallback color */
+  background: rgba(0, 0, 0, 0.4); /* Black background with 0.5 opacity */
+  color: #fffbfb;
+  ">
+      <a class="navbar-brand" href="#"><img src="Image/v.jpg" alt="logo" style="width:44px;"></a>
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <i class="fas fa-bars nav-item" style="color: white; font-weight:bolder; font-size: 24px;"></i>
+        <!-- <span class="navbar-toggler-icon"> <i class="fas fa-bars" style="color: white; font-weight:bolder; font-size: 24px;"></i></span> -->
+      </button>
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item" style=" width: 170px; font-size: 15px; font-style: sans-serif; font-weight:bold; text-align: center;">
+            <a class="nav-link" href="Home.html">HOME</a>
+          </li>
+          <li class="nav-item" style=" width: 190px; font-size: 15px; font-style: sans-serif; font-weight:bold; text-align: center;">
+            <a class="nav-link" href="destinations">DESTINATIONS</a>
+          </li>
+          <li class="nav-item " style=" width: 205px; font-size: 15px; font-style: sans-serif; font-weight:bold; text-align: center;">
+            <a class="nav-link" href="#">THINGS TO DO</a>
+          </li>
+          <li class="nav-item " style=" width: 200px; font-size: 15px; font-style: sans-serif; font-weight:bold; text-align: center;">
+            <a class="nav-link" href="#">ABOUT US</a>
+          </li>
+          <li class="nav-item " style=" width: 190px; font-size: 15px; font-style: sans-serif; font-weight:bold; text-align: center;">
+            <a class="nav-link" href="contact.html">CONTACT US</a>
+          </li>
+          <li class="nav-item " style=" width: 170px; font-size: 15px; font-style: sans-serif; font-weight:bold; text-align: center;">
+            <a class="nav-link" href="help.html">HELP</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Actual search box -->
+      <!-- <div class="form-group has-search my-lg-0">
+   <span class="fa fa-search form-control-feedback"></span>
+   <input type="text" class="form-control" placeholder="Search">
+  </div> -->
+      <form class="navbar-form my-2 my-lg-0" action="/action_page.php">
+        <div class="input-group d-flex input-group w-auto">
+          <input type="text" class="form-control form-control-underlined" placeholder="Search" name="search" style="color: white; text-align: center;">
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="submit" style="background:transparent !important;">
+              <i class="fa fa-search" style="color: white; font-weight:bolder; font-size: 22px;"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </nav>
+    <div class="text-block">
+      <h1 class="display-3 text-center">Plan your journey</h1> <br>
+    </div>
+    <div class="bottom-center">
+      <h2 class="glow">Your journey starts here</h2>
+    </div>
+</div>
+<!-- Form of user demand -->
+  <div class="container">
+    <p class="para">
+      Diverge from the typical tourist destinations, in favour of unique, authentic experiences. Experiences designed in the most inspiring surroundings, that will be yours, and yours only. Journeys that create memorable moments and we itineraries
+      will make this happen. The wonders of the world are within your reach; just tell us what you’re dreaming of today.
+    </p>
+
+    <div class="shadow-lg p-3 mb-5 bg-white rounded">
+      <div class="container p-3 my-3">
+
+        <h4 class="mb-3">Do you know where you want to go?</h4>
+        <div class="row">
+          <div class="col">
+            <button type="button" class="btn btn-block border" onclick="show()" style="background-color: #f3f3f3;">Yes</button>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-block border" onclick="hide()" style="background-color: #f3f3f3;">Not sure</button>
+          </div>
+          <script type="text/javascript">
+            function show() {
+              var x = document.getElementById("selectcity");
+              if (x.style.display === "none") {
+                x.style.display = "block";
+              } else {
+                x.style.display = "block";
+              }
+            }
+
+            function hide() {
+              document.getElementById("selectcity").style.display = "none";
+            }
+          </script>
+        </div>
+
+        <div class="row" id="selectcity">
+          <div class="col" style="font-family: 'Lato', monospace;
+  font-size: ~'calc(1rem + 1vw)';">
+            <p style="margin:10px;"> You can select multiple.</p>
+
+            <div class="labelBlock">
+              <label class="label">
+                <input class="label__checkbox" type="checkbox" />
+                <span class="label__text">
+                  <span class="label__check">
+                    <i class="fa fa-check icon"></i>
+                  </span>
+                </span>
+              </label> <span class="label label-default">Pune</span>
+            </div>
+
+            <div class="labelBlock">
+              <label class="label">
+                <input class="label__checkbox" type="checkbox" />
+                <span class="label__text">
+                  <span class="label__check">
+                    <i class="fa fa-check icon"></i>
+                  </span>
+                </span>
+              </label> <span class="label label-default">Mumbai</span>
+            </div>
+
+            <div class="labelBlock">
+              <label class="label">
+                <input class="label__checkbox" type="checkbox" />
+                <span class="label__text">
+                  <span class="label__check">
+                    <i class="fa fa-check icon"></i>
+                  </span>
+                </span>
+              </label> <span class="label label-default">Nagpur</span>
+            </div>
+
+            <div class="labelBlock">
+              <label class="label">
+                <input class="label__checkbox" type="checkbox" />
+                <span class="label__text">
+                  <span class="label__check">
+                    <i class="fa fa-check icon"></i>
+                  </span>
+                </span>
+              </label> <span class="label label-default">Nanded</span>
+            </div>
+
+            <div class="labelBlock">
+              <label class="label">
+                <input class="label__checkbox" type="checkbox" />
+                <span class="label__text">
+                  <span class="label__check">
+                    <i class="fa fa-check icon"></i>
+                  </span>
+                </span>
+              </label> <span class="label label-default">Auranga</span>
+            </div>
+
+          </div>
+        </div>
+
+        <h4 class="mb-3 mt-5">When would you like to go?</h4>
+         <h5 class="mb-2 mt-4"><small>(Specific day is optional)</small></h5>
+        <form class="dateRange" action="index.html" method="post" autocomplete="off">
+           <div class="flex-row d-flex justify-content-center">
+            <div class="col-xl-5 col-lg-6 col-11 px-1">
+                <div class="input-group input-daterange"> <label class="">Select Date Range :</label> <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" readonly /> </div>
+            </div>
+           </div>
+          <script type="text/javascript">
+            $(document).ready(function() {
+                $(function() {
+                  $('input[name="daterange"]').daterangepicker({
+                      "startDate": "01/01/2021",
+                      "endDate": "30/12/2021",
+                      opens: 'center',
+                      locale: {
+                      format: 'DD/MM/YYYY'
+                    }
+                  });
+                });
+            });
+        </script>
+        </form>
+
+        <h4 class="mb-4 mt-5">Who's going?</h4>
+        <form class="" action="index.html" method="post">
+          <div class="form-row">
+            <div class="form-group col mr-3">
+              <label for="inputP" style="color: grey;">(Adults 18+)</label>
+              <select id="inputP" class="form-control"style="color: grey;background-color: #f3f3f3;">
+                <option selected>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>More</option>
+              </select>
+            </div>
+            <div class="form-group col mr-3">
+              <label for="inputC" style="color: grey;">Children</label>
+              <select id="inputC" class="form-control"style="color: grey;background-color: #f3f3f3;">
+                <option selected>0</option>
+                <option value="">1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>More</option>
+              </select>
+            </div>
+          </div>
+        </form>
+
+        <h4 class="mb-4 mt-5">Must Sees & Must Dos</h4>
+         <form class="" action="index.html" method="post">
+           <div class="form-group">
+            <div class="form-row">
+             <div class="form-group col m-1">
+              <input type="text" class="form-control form-control-lg" id="inputDo" placeholder="i.e. Safari with elephants, Climb the mountains" style="padding-right: 0; padding-left: 2%;background-color: #f3f3f3;">
+             </div>
+            </div>
+           </div>
+         </form>
+
+         <h4 class="mb-4 mt-5">Is this trip for a special occasion?</h4>
+         <div class="row">
+           <div class="col">
+             <button type="button" class="btn btn-block border" onclick="shows()" style="background-color: #f3f3f3;">Yes</button>
+           </div>
+           <div class="col">
+             <button type="button" class="btn btn-block border" onclick="hider()" style="background-color: #f3f3f3;">No</button>
+           </div>
+           <script>
+             function shows() {
+               var x = document.getElementById("selectOcc");
+               if (x.style.display !== "none") {
+                 x.style.display = "block";
+               } else {
+                 x.style.display = "block";
+               }
+             }
+
+             function hider() {
+               document.getElementById("selectOcc").style.display = "none";
+             }
+           </script>
+         </div>
+         <div class="row" id="selectOcc">
+           <div class="col" style="font-family: 'Lato', monospace;
+                        font-size: ~'calc(1rem + 1vw)';">
+
+             <div class="labelBlock">
+               <label class="label">
+                 <input class="label__checkbox" type="checkbox" />
+                 <span class="label__text">
+                   <span class="label__check">
+                     <i class="fa fa-check icon"></i>
+                   </span>
+                 </span>
+               </label> <span class="label label-default">Honeymoon</span>
+             </div>
+
+             <div class="labelBlock">
+               <label class="label">
+                 <input class="label__checkbox" type="checkbox" />
+                 <span class="label__text">
+                   <span class="label__check">
+                     <i class="fa fa-check icon"></i>
+                   </span>
+                 </span>
+               </label> <span class="label label-default">Anniversary</span>
+             </div>
+
+             <div class="labelBlock">
+               <label class="label">
+                 <input class="label__checkbox" type="checkbox" />
+                 <span class="label__text">
+                   <span class="label__check">
+                     <i class="fa fa-check icon"></i>
+                   </span>
+                 </span>
+               </label> <span class="label label-default">Birthday</span>
+             </div>
+
+             <div class="labelBlock">
+               <label class="label">
+                 <input class="label__checkbox" type="checkbox" />
+                 <span class="label__text">
+                   <span class="label__check">
+                     <i class="fa fa-check icon"></i>
+                   </span>
+                 </span>
+               </label> <span class="label label-default">Other</span>
+             </div>
+
+           </div>
+         </div>
+
+         <h4 class="mb-4 mt-5">Anything else we should know about your trip?</h4>
+         <form class="" action="index.html" method="post">
+           <div class="form-group">
+            <div class="form-row">
+             <div class="form-group col m-1">
+              <textarea class="form-control" rows="6" id="comment" name="text" placeholder="Optional - tell us if you have specific plans" style="padding: 24px;background-color: #f3f3f3;"></textarea>
+             </div>
+            </div>
+           </div>
+         </form>
+
+          <h4 class="mb-4 mt-5">Budget per person</h4>
+
+          <div class="container ra">
+  <form class="range">
+    <div class="form-group range__slider">
+      <input type="range" step="500">
+    </div><!--/form-group-->
+    <div class="form-group range__value">
+      <label>Per Person Amount</label>
+      <span></span>
+    </div><!--/form-group-->
+  </form>
+  <script type="text/javascript">
+  class Slider {
+    constructor (rangeElement, valueElement, options) {
+      this.rangeElement = rangeElement
+      this.valueElement = valueElement
+      this.options = options
+
+      // Attach a listener to "change" event
+      this.rangeElement.addEventListener('input', this.updateSlider.bind(this))
+    }
+
+    // Initialize the slider
+    init() {
+      this.rangeElement.setAttribute('min', options.min)
+      this.rangeElement.setAttribute('max', options.max)
+      this.rangeElement.value = options.cur
+
+      this.updateSlider()
+    }
+
+    // Format the money
+    asMoney(value) {
+      return '₹ ' + parseFloat(value)
+        .toLocaleString('INR', { maximumFractionDigits: 2 })
+    }
+
+    generateBackground(rangeElement) {
+      if (this.rangeElement.value === this.options.min) {
+        return
+      }
+
+      let percentage =  (this.rangeElement.value - this.options.min) / (this.options.max - this.options.min) * 100
+      return 'background: linear-gradient(to right, #50299c, #7a00ff ' + percentage + '%, #d3edff ' + percentage + '%, #dee1e2 100%)'
+    }
+
+    updateSlider (newValue) {
+      this.valueElement.innerHTML = this.asMoney(this.rangeElement.value)
+      this.rangeElement.style = this.generateBackground(this.rangeElement.value)
+    }
+  }
+
+  let rangeElement = document.querySelector('.range [type="range"]')
+  let valueElement = document.querySelector('.range .range__value span')
+
+  let options = {
+    min: 2000,
+    max: 75000,
+    cur: 37500
+  }
+
+  if (rangeElement) {
+    let slider = new Slider(rangeElement, valueElement, options)
+
+    slider.init()
+  }
+  </script>
+</div><!--/ Rangecontainer-->
+
+<h4 class="mb-4 mt-5">Your Details</h4>
+<form class="mb-5">
+  <div class="form-row m-3">
+    <div class="col">
+      <input type="text" class="form-control form-control-lg" placeholder="First name">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control form-control-lg" placeholder="Last name">
+    </div>
+  </div>
+  <div class="form-row m-3">
+    <div class="col">
+      <input type="email" class="form-control form-control-lg" placeholder="Email address">
+    </div>
+  </div>
+  <div class="form-row m-3">
+    <div class="col">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">+91</div>
+        </div>
+        <input type="number" class="form-control form-control-lg" minlength="10" maxlength="10" placeholder="Mobile Number">
+      </div>
+    </div>
+  </div>
+
+  <div class="form-row m-4">
+    <div class="col">
+      <button type="submit" class="btn" style=" background-image: linear-gradient(125deg,#a72879,#064497);
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 16px;
+      padding: 8px 16px;
+      border: none;
+      width:200px;
+      cursor: pointer;">Submit</button>
+    </div>
+  </div>
+
+ </form>
+
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
